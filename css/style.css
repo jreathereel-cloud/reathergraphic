@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+     background: rgb(beige, green, rgb(1, 1, 6));
+  
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+  position: fixed;
+    display: flex;
+     padding: auto;
+    justify-content: space-between;
+    box-shadow: #05172f;  
+}
+
+
+.navbar nav{
+    justify-content: space-between;
+    text-decoration: none;
+}
+.nav_bar {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.nav_bar a{
+    text-decoration: none;
+   color: beige;
+   font-size: 16px;  
+   font-weight: 500;
+   transition: 0.3s ease;
+}
+.nav_bar a:hover {
+    color: #05172f;
+    background-color: beige;
+   border-radius: 10px;
+}
+main {
+    flex: 1;
+    margin-top: 40px;
+}
+.menu{
+    z-index: 3;
+    background-color: #05172f;
+    position: relative;
+    z-index: 10;
+    height: 70px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    top: 0;
+  
+}
+.logo {
+    padding: 10px 20px;
+    margin-left: 0;
+}
+.Logo img {
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: #05172f;
+    box-shadow: 0 0px 20px beige 
+    
+}
+.section_info{
+    background-color: beige;
+    z-index: 2;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 8%;
+    height: 100vh;
+    position: relative;
+    box-shadow: 0 0px 20px  #05172f ;
+}
+.position_info{
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+/*bloc d'information de presentation.*/
+.present_info{
+    width: 50%;
+}
+.info_title{
+    color: #05172f;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.present_info h1 {
+font-size: 28px;
+margin-bottom: 15px;
+}
+.info_p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.position_bar p{
+    color: rgb(246, 246, 233);
+    margin-top: auto;
+    text-align: center;
+    position: relative;
+   
+}
+.portrait{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.portrait img{
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #05172f;
+    box-shadow: 0 20px 50px #05172f
+}
+
+main{
+    width: 100%;
+}
+.voir_plus a {
+    text-decoration: none;
+    color: antiquewhite;
+    background-color: #05172f;
+    border-radius: 50px;
+    box-shadow: 0 20px 50px #05172f;
+    display: inline-block;
+    margin-bottom: 20px;
+    
+}
+.voir_plus {
+
+      margin-bottom: 20px;
+}
+
+/* Section a propos */
+
+.about {
+    position: relative;
+    z-index: 1;
+    background-color: beige;
+    height: 50vh;
+}
+.about h2{
+    color:  #05172f;
+    text-align: center;
+    font-weight: bold;
+}
+.about p{
+    color: #05172f;
+}
+.choix {
+    width: 100%;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f5f5f5;  
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.choix h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+    color: #222;
+}
+
+.experience {
+  display: flex;
+  
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+
+}
+.liens a{ 
+      text-decoration: none;
+    color: antiquewhite;
+    background-color: #05172f;
+    border-radius: 50px;
+    box-shadow: 0 20px 50px #05172f;
+    display: inline-block;
+    margin-bottom: 70px;
+    
+}
+.liens {
+    margin-top: 50px;
+}
+
+.description {
+    width: 280px;
+    min-height: 150px;
+  flex: 0 0 280px;
+   min-height: 150px;
+   padding: 30px 20px;
+   box-sizing: border-box;
+   background-color: #e8dfc9;
+   border-radius: 15px;
+   box-shadow: 0 5px 15px rgb(2, 2, 61, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.description h3 {
+    margin: 0 0 12px;
+    font-size: 22px;
+    color: #05172f;
+}
+.description p {
+    margin: 0;
+    font-size: 16px;
+    color: #05172f;
+}
+.footer {
+    background-color: #05172f;
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-widht: 1024px) {
+    .nav_bar {
+        gap: 30px;
+    }
+}
+@media (max-widht: 768px) {
+    .menu {
+        height: auto;
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    .present_info {
+        flex-direction: column;
+       
+    }
+  
+}

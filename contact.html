@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Reather Graphic Designer</title>
+    <link rel="stylesheet" href="css/contact-styles.css">
+    <link rel="stylesheet" href="css/travaux.css">
+    <link rel="stylesheet" href="css/style-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body class="body">
+  <!-- ===== NAVIGATION BAR ===== -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="image/Mon logo.jpg" alt="Logo Reathereel">
+        </div>
+        
+        <nav>
+            <ul class="nav_bar">
+                <li><a href="index-responsive.html">Accueil</a></li>
+                <li><a href="a-propos.html">À-propos</a></li>
+                <li><a href="travaux.html">Catalogue</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="contact-hero">
+            <div class="contact-hero-content">
+                <h1 style="color: white;">Parlons de votre projet</h1>
+                <p>Je suis toujours enthousiaste à propos de de nouveaux projets créatifs et de collaborations intéressantes.</p>
+                <p class="contact-subtitle">N'hésitez pas à me contacter via l'une des méthodes ci-dessous</p>
+            </div>
+        </section>
+
+        <!-- QUICK CONTACT BUTTONS -->
+        <section class="quick-contact">
+            <div class="quick-contact-container">
+                <h2>Contactez-moi rapidement</h2>
+                
+                <div class="contact-buttons-grid">
+                    <!-- WhatsApp Button -->
+                    <a href="https://wa.me/50932208776?text=Salut%20Mr.%20Reathereel%20je%20vous%20contacte%20depuis%20votre%20site%20au%20sujet%20d%27un%20travail%20que%20je%20voudrai%20vous%20confier." 
+                       target="_blank" class="contact-btn whatsapp-btn" title="Contactez-moi sur WhatsApp">
+                        <div class="btn-icon"><i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="btn-content">
+                            <h3>WhatsApp</h3>
+                            <p>Message instantané</p>
+                            <span class="btn-link">+509 32208776</span>
+                        </div>
+                    </a>
+
+                    <!-- Email Button 1 -->
+                    <a href="mailto:reathergraphiste2006@gmail.com" 
+                       class="contact-btn email-btn" title="Envoyer un email">
+                        <div class="btn-icon"><i class="fa-brands fa-enveloppe"></i>
+                            ✉️</div>
+                        <div class="btn-content">
+                            <h3>Email Principal</h3>
+                            <p>Réponse rapide</p>
+                            <span class="btn-link">reathergraphiste2006@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <!-- Email Button 2 -->
+                    <a href="mailto:jreathereel@gmail.com" 
+                       class="contact-btn email-btn" title="Envoyer un email">
+                        <div class="btn-icon">📧</div>
+                        <div class="btn-content">
+                            <h3>Email Secondaire</h3>
+                            <p>Alternative</p>
+                            <span class="btn-link">jreathereel@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <!-- Instagram Button -->
+                    <a href="https://www.instagram.com/mr_reather_officiel?igsi=ZHVtc2dwaW5kOTI1" 
+                       target="_blank" class="contact-btn instagram-btn" title="Suivez-moi sur Instagram">
+                        <div class="btn-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="btn-content">
+                            <h3>Instagram</h3>
+                            <p>Découvrez mon portfolio</p>
+                            <span class="btn-link">@mr_reather_officiel</span>
+                        </div>
+                    </a>
+
+                    <!-- TikTok Button -->
+                    <a href="https://www.tiktok.com/@reathereeljoseph06" 
+                       target="_blank" class="contact-btn tiktok-btn" title="Suivez-moi sur TikTok">
+                        <div class="btn-icon"><i class="fa-brands fa-tiktok"></i></div>
+                        <div class="btn-content">
+                            <h3>TikTok</h3>
+                            <p>Contenu créatif</p>
+                            <span class="btn-link">@reathereeljoseph06</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM SECTION -->
+        <section class="contact-form-section">
+            <div class="contact-form-container">
+                <div class="form-header">
+                    <h2>Envoyer un message</h2>
+                    <p>Remplissez le formulaire ci-dessous et je vous répondrai dès que possible</p>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Votre nom *</label>
+                        <input type="text" id="name" name="name" required placeholder="Jean Dupont">
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Votre email *</label>
+                        <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Téléphone (optionnel)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+509 XXXX XXXX">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Demande de projet">
+                        <span class="error-message" id="subjectError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Type de service</label>
+                        <select id="service" name="service">
+                            <option value="">Sélectionnez un service</option>
+                            <option value="graphisme">Graphisme</option>
+                            <option value="web">Web Design</option>
+                            <option value="branding">Branding</option>
+                            <option value="evenementiel">Événementiel</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Décrivez votre projet..." rows="6"></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">J'accepte les conditions de confidentialité</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Envoyer le message</button>
+                    <span class="form-message" id="formMessage"></span>
+                </form>
+            </div>
+        </section>
+
+        <!-- INFO SECTION -->
+        <section class="contact-info-section">
+            <div class="info-container">
+                <h2>Autres informations</h2>
+                
+                <div class="info-grid">
+                    <div class="info-box">
+                        <h3>Localisation</h3>
+                        <p>Les Cayes/SUD Haïti</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Disponibilité</h3>
+                        <p>Dimanche-Samedi<br>8h00 - 18h00 (GMT-5)</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Délai de réponse</h3>
+                        <p>24-48 heures pour une première réponse</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Tarifs</h3>
+                        <p>Forfaits personnalisés selon votre projet</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOCIAL SECTION -->
+        <section class="social-section">
+            <div class="social-container">
+                <h2>Suivez mon actualité</h2>
+                <p>Retrouvez-moi sur les réseaux sociaux pour découvrir mes derniers projets</p>
+                
+                <div class="social-links">
+                    <a href="https://www.instagram.com/mr_reather_officiel?igsi=ZHVtc2dwaW5kOTI1" 
+                       target="_blank" class="social-link instagram" title="Instagram">
+                       <div class="btn-icon"><i class="fa-brands fa-instagram" ></i></div>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@reathereeljoseph06" 
+                       target="_blank" class="social-link tiktok" title="TikTok">
+                        <div class="btn-icon"><i class="fa-brands fa-tiktok" style="color: white;"></i></div>
+                       <span>TikTok</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Reather Graphic Designer. Tous les droits réservés.</p>
+        <p>📧 contact@reather.com | 📱 +509 32208776</p>
+    </footer>
+    <script src="js/script-responsive.js"></script>
+    <script src="js/contact-script.js"></script>
+</body>
+</html>

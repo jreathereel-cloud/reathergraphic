@@ -1,0 +1,491 @@
+
+        /* ===== STYLE SPÉCIFIQUE À PROPOS ===== */
+        .apropos-hero {
+            background: radial-gradient(circle at left center, rgb(19, 102, 185), 
+ transparent 40%),
+  #f5f5f5;
+            padding: 60px 80px;
+            min-height: calc(100vh - 100px);
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .apropos-portrait {
+            flex: 0 0 350px;
+        }
+
+            
+        .apropos-portrait img {
+            width: 350px;
+            height: 450px;
+            border-radius: 10px 50px ;
+            object-fit: cover;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .apropos-portrait img:hover {
+            transform: scale(1.02);
+        }
+
+        .apropos-content {
+            flex: 1;
+        }
+        .apropos-content {
+        background: linear-gradient(135deg, rgba(11, 74, 111, 0.05) 0%, rgba(212, 165, 116, 0.1) 100%);
+                    padding: 40px;
+                    border-radius: 10px;
+                    border-top: 3px solid #0b4a6f;
+                    text-align: justify;
+        }
+        .apropos-content h1 {
+            font-size: 48px;
+            color: #0b4a6f;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .apropos-intro {
+            font-size: 18px;
+            color: #1a1a1a;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .apropos-text {
+            font-size: 16px;
+            color: #1a1a1a;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        /* ===== SECTION LOGO ===== */
+        .logo-section {
+            background-color:  #0b4a6f;
+            padding: 0px;
+            text-align: center;
+            height: 55vh;
+            border-top: 1px solid rgb(12, 80, 120);
+        }
+
+        .logo-section h2 {
+            font-size: 42px;
+            color: #e0e0e0;
+            margin-bottom: 50px;
+            font-weight: bold;
+        }
+
+        .logo-section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #e0e0e0;
+            margin: 20px auto 0;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .logo-item {
+            flex: 0 0 250px;
+        }
+
+        .logo-item img {
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+            filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+            transition: transform 0.3s ease;
+        }
+
+        .logo-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-item p {
+            color: #e0e0e0;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* ===== SECTION HISTOIRE ===== */
+        .histoire-section {
+            background-color: white;
+            padding: 80px;
+            border-top: 1px solid rgba(11, 74, 111, 0.2);
+        }
+
+        .histoire-section h2 {
+            font-size: 42px;
+            color: #0b4a6f;
+            margin-bottom: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .histoire-section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #0b4a6f;
+            margin: 20px auto 0;
+        }
+
+        .histoire-text {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 16px;
+            color: #1a1a1a;
+            line-height: 1.9;
+        }
+
+        .histoire-text p {
+            margin-bottom: 20px;
+        }
+
+        /* ===== SECTION LOGICIELS ===== */
+
+        .icon img{
+            border-radius: 80%;
+            width: 15%;
+            height: auto;
+        }
+        .logiciels-section {
+            background-color: #0b4a6f;
+            padding: 80px;
+            border-top: 1px solid rgba(212, 165, 116, 0.2);
+        }
+
+        .logiciels-section h2 {
+            font-size: 42px;
+            color: #e0e0e0;
+            margin-bottom: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .logiciels-section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #e0e0e0;
+            margin: 20px auto 0;
+        }
+
+        .logiciels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .logiciel-card {
+            background: linear-gradient(135deg, rgba(8, 81, 126, 0.693) 0%, rgba(1, 13, 34, 0.86) 100%);
+  padding: 40px;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid #e0e0e0;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .logiciel-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(212, 165, 116, 0.15);
+            background: rgba(11, 74, 111, 0.4);
+        }
+
+        .logiciel-card h3 {
+            font-size: 20px;
+            color:#e0e0e0;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .logiciel-card p {
+            font-size: 14px;
+            color: #e0e0e0;
+        }
+
+        /* ===== SECTION SERVICES ===== */
+        .services-section {
+            background-color: white;
+            padding: 80px;
+            border-top: 1px solid rgba(11, 74, 111, 0.2);
+        }
+
+        .services-section h2 {
+            font-size: 42px;
+            color: #0b4a6f;
+            margin-bottom: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .services-section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #0b4a6f;
+            margin: 20px auto 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, rgba(11, 74, 111, 0.05) 0%, rgba(212, 165, 116, 0.1) 100%);
+            padding: 40px;
+            border-radius: 10px;
+            border-top: 3px solid #0b4a6f;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(11, 74, 111, 0.15);
+        }
+
+        .service-icon {
+            font-size: 40px;
+            color: #0b4a6f;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            color: #0b4a6f;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .service-card p {
+            font-size: 15px;
+            color: #1a1a1a;
+            line-height: 1.7;
+        }
+
+        /* ===== SECTION RÔLES ===== */
+        .roles-section {
+            background-color: #0b4a6f;
+            padding: 80px;
+            border-top: 1px solid rgba(212, 165, 116, 0.2);
+        }
+
+        .roles-section h2 {
+            font-size: 42px;
+            color: #e0e0e0;
+            margin-bottom: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .roles-section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color:#e0e0e0;
+            margin: 20px auto 0;
+        }
+
+        .roles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .role-card {
+            background: linear-gradient(135deg, rgba(8, 81, 126, 0.693) 0%, rgba(1, 13, 34, 0.86) 100%);
+  padding: 40px;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid #e0e0e0;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .role-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(212, 165, 116, 0.15);
+            background: rgba(11, 74, 111, 0.4);
+        }
+
+        .role-icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .role-card h3 {
+            font-size: 18px;
+            color:#e0e0e0;
+            font-weight: bold;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .apropos-hero {
+                flex-direction: column;
+                padding: 60px 40px;
+                gap: 40px;
+            }
+
+            .apropos-portrait {
+                flex: 0 0 auto;
+                text-align: center;
+            }
+
+            .apropos-portrait img {
+                width: 300px;
+                height: 400px;
+            }
+
+            .apropos-content h1 {
+                font-size: 36px;
+            }
+
+            .histoire-section,
+            .logiciels-section,
+            .services-section,
+            .roles-section,
+            .logo-section {
+                padding: 60px 40px;
+            }
+
+            .logiciels-grid,
+            .services-grid,
+            .roles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .apropos-hero {
+                padding: 40px 20px;
+            }
+
+            .apropos-portrait img {
+                width: 250px;
+                height: 350px;
+            }
+
+            .apropos-content h1 {
+                font-size: 28px;
+            }
+
+            .apropos-intro,
+            .apropos-text {
+                font-size: 15px;
+            }
+
+            .histoire-section,
+            .logiciels-section,
+            .services-section,
+            .roles-section,
+            .logo-section {
+                padding: 40px 20px;
+            }
+
+            .logiciels-section h2,
+            .services-section h2,
+            .roles-section h2,
+            .logo-section h2 {
+                font-size: 32px;
+            }
+
+            .logo-container {
+                gap: 30px;
+            }
+
+            .logo-item,
+            .logo-item img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .logiciels-grid,
+            .services-grid,
+            .roles-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            main {
+                margin-top: 80px;
+            }
+
+            .apropos-hero {
+                padding: 30px 15px;
+            }
+
+            .apropos-portrait img {
+                width: 200px;
+                height: 280px;
+            }
+
+            .apropos-content h1 {
+                font-size: 24px;
+            }
+
+            .apropos-intro,
+            .apropos-text {
+                font-size: 14px;
+            }
+
+            .histoire-section,
+            .logiciels-section,
+            .services-section,
+            .roles-section,
+            .logo-section {
+                padding: 30px 15px;
+            }
+
+            .logiciels-section h2,
+            .services-section h2,
+            .roles-section h2,
+            .logo-section h2 {
+                font-size: 24px;
+            }
+
+            .logo-item,
+            .logo-item img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .logiciel-card,
+            .role-card {
+                padding: 20px;
+            }
+
+            .service-card {
+                padding: 20px;
+            }
+        }
+   
